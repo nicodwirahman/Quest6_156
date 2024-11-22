@@ -1,8 +1,11 @@
 package com.example.pertemuan8.ui.view.screen
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -34,7 +37,12 @@ fun TampilView(
                 .fillMaxSize()
                 .background(Color.White)
                 .padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+           horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+        }
 }
 
 }
