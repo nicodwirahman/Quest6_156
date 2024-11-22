@@ -63,6 +63,12 @@ fun TampilView(
                         fontStyle = FontStyle.Italic, // Gunakan FontStyle langsung
                         fontSize = 14.sp
                     )
+                    Column {
+                        Text(
+                            text = uistate.email,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 14.sp
+                        )
 
                 }
 
