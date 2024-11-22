@@ -23,13 +23,19 @@ enum class Halaman {
 }
 
 @Composable
-fun MahasiswaApp(
+
+fun YourComposableFunction(
     modifier: Modifier = Modifier,
     mahasiswaViewModel: MahasiswaViewModel = viewModel(),
-    krsViewmodel: RencanaStudyViewModel = viewModel(),
+    krsViewModel: RencanaStudyViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
 ) {
+
     val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
+
+
+    val rencanaStudiUiState = krsViewModel.krsStateUi.collectAsState().value
+
     NavHost(
         navController = navController,
         startDestination = Halaman.Splash.name,
