@@ -130,10 +130,16 @@ fun Tampildata(
                     fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
                     fontSize = 14.sp
                 )
-
+                Text(
+                    text = krs.namaMK,
+                    fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+                    fontSize = 14.sp
+                )
 
             }
-        }
-    }
 
-}
+
+        }
+
+    }
+        }
