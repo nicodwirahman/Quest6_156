@@ -71,6 +71,9 @@ fun TampilView(
                             fontSize = 14.sp
                         )
                         Spacer(modifier = Modifier.padding(16.dp))
+                        Column(
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
 
                 }
 
