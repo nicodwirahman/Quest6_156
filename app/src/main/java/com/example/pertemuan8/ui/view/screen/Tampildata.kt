@@ -74,6 +74,11 @@ fun TampilView(
                         Column(
                             modifier = Modifier.fillMaxWidth()
                         ) {
+                            Text(
+                                text = "Matakuliah yang diambil:",
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 14.sp
+                        }
 
                 }
 
