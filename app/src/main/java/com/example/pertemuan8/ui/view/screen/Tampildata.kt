@@ -47,7 +47,7 @@ fun Tampildata(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.padding(top = 16.dp))
-        Row(
+        Row (
             modifier = Modifier.padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -58,14 +58,12 @@ fun Tampildata(
             )
             Spacer(modifier = Modifier.padding(start = 16.dp))
             Column {
-                Text(
-                    text = "Data KRS Mahasiswa",
+                Text(text = "Data KRS Mahasiswa",
                     color = Color.White,
                     fontSize = 15.sp,
                     fontWeight = FontWeight.Bold
                 )
-                Text(
-                    text = "Universitas Muhammadiyah Yogyakarta",
+                Text(text = "Universitas Muhammadiyah Yogyakarta",
                     color = Color.White,
                     fontWeight = FontWeight.Light
                 )
@@ -135,23 +133,44 @@ fun Tampildata(
                     fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
                     fontSize = 14.sp
                 )
-
+                Row {
+                    Text(
+                        text = "Kelas:",
+                        fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
+                        fontSize = 14.sp
+                    )
+                    Text(
+                        text = krs.kelas,
+                        fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+                        fontSize = 14.sp
+                    )
+                }
             }
-            Text(
-                text = krs.namaMK,
-                fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
-                fontSize = 14.sp
-            )
-            Row {
-                Text(
-                    text = "Kelas:",
-                    fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
-                    fontSize = 14.sp
-                )
+            Spacer(modifier = Modifier.padding(16.dp))
 
+
+            Row (
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Button(onClick = {onbackbuttonClicked()}) {
+                    Text(text = "Kembali")
+                }
+
+
+                Button(onClick = {
+                    onResetButtonClicked()
+                }){
+                    Text(text = "Reset")
+                }
             }
 
-}
+
+        }
+
+
+
 
     }
-        }
+}
+
