@@ -58,6 +58,11 @@ fun TampilView(
                         fontStyle = FontStyle.Italic,
                         fontSize = 14.sp
                     )
+                    Text(
+                        text = uistate.nama,
+                        fontStyle = FontStyle.Italic, // Gunakan FontStyle langsung
+                        fontSize = 14.sp
+                    )
 
                 }
 
